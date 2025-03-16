@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1,
+h3,
+h4 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-section {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.main-title {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.date-display {
+    margin-top: 5px;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.main-content {
+    display: flex;
+    gap: 15px;
+    height: calc(100vh - 200px);
+    min-height: 400px;
+    margin-bottom: 30px;
+}
+
+.left-panel {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.right-panel {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.status-panel,
+.control-panel {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.map-panel {
+    background: #401567;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    height: 550px;
+
+}
+
+.location-map {
+    height: 500px !important;
+    width: 100% !important;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: grab;
+
+}
+
+.location-map:active {
+    cursor: grabbing;
+}
+
+.panel-title {
+    color: #FFD700;
+    margin: 0 0 10px 0;
+    font-size: 1em;
+}
+
+.current-day-box {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #401567;
+
+}
+
+.current-value {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #FFD700;
+    margin: 5px 0;
+}
+
+.current-status {
+    font-size: 0.9em;
+}
+
+.date-picker {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.SingleDatePickerInput {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #401567;
+    color: #ffffff;
+    
+}
+
+#selected-date-output {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffe600;
+}
+
+#date-details {
+    background-color: #401567;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+.main-graph {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(195, 176, 176, 0.05);
+    height: 500px !important;
+    width: 100% !important;
+   
+}
+
+.footer-section {
+    background: #1e1e1e;
+    
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quality-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.quality-indicator {
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.good {
+    background: rgb(243, 241, 241);
+    color: #579e76;
+    
+}
+
+.moderate {
+    background: rgba(243, 241, 241);
+    color: #2e47c28f;
+   
+}
+
+.sensitive {
+    background: rgba(243, 241, 241);
+    color: #d3ce3b;
+   
+}
+
+.unhealthy {
+    background: rgba(243, 241, 241);
+    color: #cf0f0f;
+    
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+}

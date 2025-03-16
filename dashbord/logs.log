@@ -1,0 +1,10 @@
+2025-03-16 00:03:07,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-16 00:03:07,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-16 00:03:07,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-16 00:03:07,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-16 00:03:17,045:INFO:Initializing load_model()
+2025-03-16 00:03:17,045:INFO:load_model(model_name=pm25_Extra_Trees_Regressor, platform=None, authentication=None, verbose=True)
